@@ -34,5 +34,7 @@
     <true/>
     <key>NSHumanReadableCopyright</key>
     <string>Copyright 2026 ЯR Switcher Contributors. MIT License.</string>
+    <key>NSAppleEventsUsageDescription</key>
+    <string>YR Switcher читает содержимое экрана терминала для конвертации последнего слова перед курсором.</string>
 </dict>
 </plist>

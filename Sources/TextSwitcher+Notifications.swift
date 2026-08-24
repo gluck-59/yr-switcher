@@ -55,4 +55,27 @@ extension TextSwitcher {
             NSWorkspace.shared.open(url)
         }
     }
+
+    static func showAutomationNotification() {
+        openAutomationSettings()
+        let alert = NSAlert()
+        alert.messageText = "Требуется разрешение на автоматизацию"
+        alert.informativeText = """
+            Предоставьте доступ в Системных настройках \u{2192} Конфиденциальность и безопасность \u{2192} Автоматизация, \
+            затем повторите попытку.
+            """
+        alert.alertStyle = .warning
+        alert.addButton(withTitle: "OK")
+        alert.runModal()
+    }
+
+    private static func openAutomationSettings() {
+        let major = ProcessInfo.processInfo.operatingSystemVersion.majorVersion
+        let urlString = major >= 13
+            ? "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_Automation"
+            : "x-apple.systempreferences:com.apple.preference.security?Privacy_Automation"
+        if let url = URL(string: urlString) {
+            NSWorkspace.shared.open(url)
+        }
+    }
 }

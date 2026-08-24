@@ -200,14 +200,10 @@ class TextSwitcher {
         // let completeConversion beep + restore the clipboard.
         let strategy = Self.pickStrategy(bundleID: frontBundleID)
         if strategy == .backspaceFlood {
-            Self.diag("no selection in terminal — skipping word-select fallback")
-            self.completeConversion(
-                copied: false,
-                copiedText: nil,
-                savedItems: savedItems,
-                pasteboard: pasteboard,
-                frontBundleID: frontBundleID
-            )
+            Self.diag("terminal — reading screen via AppleScript")
+            let ok = TerminalWordConverter.convertLastWord(bundleID: frontBundleID)
+            Self.restoreClipboard(savedItems, to: pasteboard)
+            if !ok { NSSound.beep() }
             return
         }
 
