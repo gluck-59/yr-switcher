@@ -1,6 +1,6 @@
 APP_NAME     = YRSwitcher
 BUNDLE_ID    = com.gluck59.bilingual-switcher
-VERSION      ?= 1.5
+VERSION      ?= 2.1
 BUILD_DIR    = build
 APP_BUNDLE   = $(BUILD_DIR)/$(APP_NAME).app
 DMG_NAME     = $(APP_NAME).dmg
