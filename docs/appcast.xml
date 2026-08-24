@@ -5,12 +5,12 @@
     <link>https://github.com/gluck-59/yr-switcher</link>
     <language>ru</language>
     <item>
-        <title>Version 2.0</title>
-        <sparkle:version>2.0</sparkle:version>
-        <sparkle:shortVersionString>2.0</sparkle:shortVersionString>
-        <enclosure url="https://github.com/gluck-59/yr-switcher/releases/download/v2.0/YRSwitcher.zip"
-                   sparkle:edSignature="iSf7hSgRclXReexBwR5lVzDtYMdKF1P/maV6bDI6aeVbD2nCub92NImv1n5Oa0fOPUit68hBrzDwQwLGT6EmAA=="
-                   length="1338929"
+        <title>Version 2.1</title>
+        <sparkle:version>2.1</sparkle:version>
+        <sparkle:shortVersionString>2.1</sparkle:shortVersionString>
+        <enclosure url="https://github.com/gluck-59/yr-switcher/releases/download/v2.1/YRSwitcher.zip"
+                   sparkle:edSignature="sVC3puVyUHX/AOqhoAUIGA/KMnBeNcs9vsB/TyPL+7g4pn7TOaPcYXwqBGH/858MFGlcTNcOCrrANGfeeyXTBA=="
+                   length="1355664"
                    type="application/octet-stream"/>
       </item>
     </channel>
